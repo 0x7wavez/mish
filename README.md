@@ -30,19 +30,19 @@ Every command you type goes through three steps:
 
 **Default build** (manual buffer reader):
 ```bash
-gcc -o wvsh wvsh.c
+gcc -o wvsh src/main.c
 ./wvsh
 ```
 
 **Standard library build** (uses `getline`):
 ```bash
-gcc -DWVSH_USE_STD_GETLINE -o wvsh wvsh.c
+gcc -DWVSH_USE_STD_GETLINE -o wvsh src/main.c
 ./wvsh
 ```
 
 **With debug symbols:**
 ```bash
-gcc -g -Wall -Wextra -o wvsh wvsh.c
+gcc -g -Wall -Wextra -o wvsh src/main.c
 ```
 
 ---
